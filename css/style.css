@@ -347,6 +347,109 @@
             }
         }
 
+        /* ── PRODUCT SHOWCASE / GALERIA ── */
+        .product-showcase {
+            background: #0a0a0a;
+        }
+
+        .showcase-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 4rem auto;
+        }
+
+        .showcase-header .section-label {
+            justify-content: center;
+        }
+
+        .showcase-header .section-title {
+            margin-bottom: 1rem;
+        }
+
+        .showcase-intro {
+            color: rgba(255, 255, 255, 0.65);
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+
+        .showcase-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .showcase-item {
+            background: #111;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            overflow: hidden;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .showcase-item:hover {
+            border-color: rgba(255, 214, 0, 0.3);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 32px rgba(255, 214, 0, 0.1);
+        }
+
+        .showcase-image {
+            width: 100%;
+            height: 280px;
+            overflow: hidden;
+            position: relative;
+            background: #1a1a1a;
+        }
+
+        .showcase-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .showcase-item:hover .showcase-image img {
+            transform: scale(1.08);
+        }
+
+        .showcase-info {
+            padding: 1.5rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .showcase-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.6rem;
+            letter-spacing: 0.03em;
+            color: var(--yellow);
+            margin: 0;
+            line-height: 1;
+        }
+
+        .showcase-category {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 700;
+            font-size: 0.75rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.5);
+            display: inline-block;
+            padding: 0.25rem 0.6rem;
+            background: rgba(255, 214, 0, 0.08);
+            border-radius: 2px;
+            align-self: flex-start;
+        }
+
+        .showcase-desc {
+            color: rgba(255, 255, 255, 0.6);
+            line-height: 1.6;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+
         /* ── SECTION BASE ── */
         section {
             padding: 6rem 4rem;
@@ -1048,5 +1151,9 @@
 
             .product-card.featured {
                 grid-column: span 2;
+            }
+
+            .showcase-grid {
+                grid-template-columns: 1fr;
             }
         }

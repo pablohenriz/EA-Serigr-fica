@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos – EA Serigráfica</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700;900&family=Barlow+Condensed:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/produtos.css">
+</head>
+
+<body class="produtos-page">
+
+    <!-- NAV -->
+    <nav>
+        <a class="nav-logo" href="/index1.html"><span>EA</span> SERIGRÁFICA</a>
+        <ul class="nav-links">
+            <li><a href="/index1.html#produtos">Produtos</a></li>
+            <li><a href="/produtos.html" class="active">Catálogo</a></li>
+            <li><a href="/index1.html#galeria">Galeria</a></li>
+            <li><a href="/index1.html#sobre">Sobre</a></li>
+            <li><a href="/index1.html#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="products-hero">
+        <div class="hero-left reveal">
+            <p class="hero-eyebrow">Catálogo de Produtos</p>
+            <h1 class="hero-title">
+                Explore Nossos<br>
+                <span class="yellow">Produtos</span>
+            </h1>
+            <p class="hero-sub">
+                Navegue por nosso catálogo completo de tintas, materiais e insumos para serigrafia e comunicação visual.
+            </p>
+        </div>
+        <div class="hero-right">
+            <div class="hero-ink-bg"></div>
+            <div class="hero-splashes">
+                <div class="splash-ring"></div>
+                <div class="splash-ring"></div>
+                <div class="splash-ring"></div>
+            </div>
+            <div class="hero-product-grid">
+                <div class="hero-product-cell">
+                    <img src="/img/1773622314582_image.png" alt="Tintas">
+                </div>
+                <div class="hero-product-cell">
+                    <img src="/img/Captura de tela 2026-03-17 140056.png" alt="Solventes">
+                </div>
+                <div class="hero-product-cell">
+                    <img src="/img/Captura de tela 2026-03-17 140128.png" alt="Plastisol">
+                </div>
+                <div class="hero-product-cell">
+                    <img src="/img/Captura de tela 2026-03-17 140259.png" alt="Marcadores">
+                </div>
+                <div class="hero-product-cell">
+                    <img src="/img/Captura de tela 2026-03-17 140252.png" alt="Ferramentas">
+                </div>
+                <div class="hero-product-cell">
+                    <img src="/img/Captura de tela 2026-03-17 140241.png" alt="Cartazes">
+                </div>
+            </div>
+            <div class="hero-badge">📦 Pronta Entrega – São Paulo</div>
+        </div>
+    </section>
+
+    <!-- TICKER -->
+    <div class="ticker" aria-hidden="true">
+        <div class="ticker-inner">
+            <span class="ticker-item">Catálogo de Produtos <span class="ticker-dot">◆</span></span>
+            <span class="ticker-item">Tintas para Serigrafia <span class="ticker-dot">◆</span></span>
+            <span class="ticker-item">Comunicação Visual <span class="ticker-dot">◆</span></span>
+            <span class="ticker-item">Materiais para Cartazistas <span class="ticker-dot">◆</span></span>
+            <span class="ticker-item">Gênesis · Sicoltex · Plastin · Colordex <span class="ticker-dot">◆</span></span>
+            <span class="ticker-item">Atendemos Profissionais e Empresas <span class="ticker-dot">◆</span></span>
+            <span class="ticker-item">Rua Aricanga, 381 – São Paulo <span class="ticker-dot">◆</span></span>
+        </div>
+    </div>
+
+    <!-- PRODUCTS -->
+    <section id="produtos" class="products-section">
+        <div class="products-header reveal">
+            <div>
+                <p class="section-label">Nossos Produtos</p>
+                <h2 class="section-title">Catálogo Completo<br>de Materiais</h2>
+                <p class="products-intro">Do iniciante ao profissional, temos tudo que você precisa para serigrafia,
+                    comunicação visual e cartazismo.</p>
+            </div>
+            <div class="filter-tabs" role="tablist" aria-label="Filtro de categorias">
+                <button class="filter-tab active" data-category="todos" role="tab" aria-selected="true">Todos</button>
+                <button class="filter-tab" data-category="tintas" role="tab" aria-selected="false">Tintas</button>
+                <button class="filter-tab" data-category="solventes" role="tab" aria-selected="false">Solventes</button>
+                <button class="filter-tab" data-category="marcadores" role="tab" aria-selected="false">Marcadores</button>
+                <button class="filter-tab" data-category="ferramentas" role="tab" aria-selected="false">Ferramentas</button>
+                <button class="filter-tab" data-category="cartazes" role="tab" aria-selected="false">Cartazes</button>
+            </div>
+        </div>
+
+        <div class="search-wrapper-inline">
+            <input type="text" class="search-input-inline" placeholder="Buscar produtos..." id="searchInput" aria-label="Buscar produtos">
+            <span class="search-icon-inline">🔍</span>
+        </div>
+
+        <div class="products-grid" id="productsGrid">
+            <!-- Tintas -->
+            <div class="product-card" data-category="tintas" data-name="Tintas Gênesis" data-desc="Tintas seribrill, vinílica fosca e metálica para serigrafia profissional.">
+                <div class="card-badge">Destaque</div>
+                <div class="card-image">
+                    <img src="/img/1773622314582_image.png" alt="Tintas Gênesis">
+                    <div class="card-overlay">
+                        <button class="btn-zoom" aria-label="Ver detalhes de Tintas Gênesis">🔍</button>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <span class="card-tag">Tintas</span>
+                    <h3 class="card-title">Tintas Gênesis</h3>
+                    <p class="card-desc">Tintas seribrill, vinílica fosca e metálica para serigrafia profissional.</p>
+                    <div class="card-footer">
+                        <span class="card-stock">✓ Em estoque</span>
+                        <button class="btn-details" data-product="Tintas Gênesis">Ver Detalhes</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="tintas" data-name="Sicoltex Vinílica" data-desc="Tinta vinílica fosca de alta qualidade para serigrafia.">
+                <div class="card-image">
+                    <img src="/img/Captura de tela 2026-03-17 140056.png" alt="Sicoltex Vinílica">
+                    <div class="card-overlay">
+                        <button class="btn-zoom" aria-label="Ver detalhes de Sicoltex Vinílica">🔍</button>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <span class="card-tag">Tintas</span>
+                    <h3 class="card-title">Sicoltex Vinílica</h3>
+                    <p class="card-desc">Tinta vinílica fosca de alta qualidade para serigrafia.</p>
+                    <div class="card-footer">
+                        <span class="card-stock">✓ Em estoque</span>
+                        <button class="btn-details" data-product="Sicoltex Vinílica">Ver Detalhes</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="tintas" data-name="Colordex Plastisol" data-desc="Plastisol para impressão em tecidos e superfícies especiais.">
+                <div class="card-image">
+                    <img src="/img/Captura de tela 2026-03-17 140128.png" alt="Colordex Plastisol">
+                    <div class="card-overlay">
+                        <button class="btn-zoom" aria-label="Ver detalhes de Colordex Plastisol">🔍</button>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <span class="card-tag">Tintas</span>
+                    <h3 class="card-title">Colordex Plastisol</h3>
+                    <p class="card-desc">Plastisol para impressão em tecidos e superfícies especiais.</p>
+                    <div class="card-footer">
+                        <span class="card-stock">✓ Em estoque</span>
+                        <button class="btn-details" data-product="Colordex Plastisol">Ver Detalhes</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="tintas" data-name="Tintas Plastin" data-desc="Vernizes e solventes para comunicação visual profissional.">
+                <div class="card-image">
+                    <img src="/img/Captura de tela 2026-03-17 140136.png" alt="Tintas Plastin">
+                    <div class="card-overlay">
+                        <button class="btn-zoom" aria-label="Ver detalhes de Tintas Plastin">🔍</button>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <span class="card-tag">Tintas</span>
+                    <h3 class="card-title">Tintas Plastin</h3>
+                    <p class="card-desc">Vernizes e solventes para comunicação visual profissional.</p>
+                    <div class="card-footer">
+                        <span class="card-stock">✓ Em estoque</span>
+                        <button class="btn-details" data-product="Tintas Plastin">Ver Detalhes</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Solventes -->
+            <div class="product-card" data-category="solventes" data-name="Solventes SOL" data-desc="Solvente desmoldante para aplicação em telas.">
+                <div class="card-image">
+                    <img src="/img/Captura de tela 2026-03-17 140056.png" alt="Solventes SOL">
+                    <div class="card-overlay">
+                        <button class="btn-zoom" aria-label="Ver detalhes de Solventes SOL">🔍</button>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <span class="card-tag">Solventes</span>
+                    <h3 class="card-title">Solventes SOL</h3>
+                    <p class="card-desc">Solvente desmoldante para aplicação em telas.</p>
+                    <div class="card-footer">
+                        <span class="card-stock">✓ Em estoque</span>
+                        <button class="btn-details" data-product="Solventes SOL">Ver Detalhes</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="solventes" data-name="Saturno Vinílico" data-desc="Solvente vinílico de secagem rápida.">
+                <div class="card-image">
+                    <img src="/img/Captura de tela 2026-03-17 140056.png" alt="Saturno Vinílico">
+                    <div class="card-overlay">
+                        <button class="btn-zoom" aria-label="Ver detalhes de Saturno Vinílico">🔍</button>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <span class="card-tag">Solventes</span>
+                    <h3 class="card-title">Saturno Vinílico</h3>
+                    <p class="card-desc">Solvente vinílico de secagem rápida.</p>
+                    <div class="card-footer">
+                        <span class="card-stock">✓ Em estoque</span>
+                        <button class="btn-details" data-product="Saturno Vinílico">Ver Detalhes</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Marcadores -->
+            <div class="product-card" data-category="marcadores" data-name="Kit Metiq" data-desc="Kit completo para escrita profissional em cartazes.">
+                <div class="card-image">
+                    <img src="/img/Captura de tela 2026-03-17 140259.png" alt="Kit Metiq">
+                    <div class="card-overlay">
+                        <button class="btn-zoom" aria-label="Ver detalhes de Kit Metiq">🔍</button>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <span class="card-tag">Marcadores</span>
+                    <h3 class="card-title">Kit Metiq</h3>
+                    <p class="card-desc">Kit completo para escrita profissional em cartazes.</p>
+                    <div class="card-footer">
+                        <span class="card-stock">✓ Em estoque</span>
+                        <button class="btn-details" data-product="Kit Metiq">Ver Detalhes</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="marcadores" data-name="Pilot Board Master" data-desc="Marcador para quadro branco de alta performance.">
+                <div class="card-image">
+                    <img src="/img/Captura de tela 2026-03-17 140259.png" alt="Pilot Board Master">
+                    <div class="card-overlay">
+                        <button class="btn-zoom" aria-label="Ver detalhes de Pilot Board Master">🔍</button>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <span class="card-tag">Marcadores</span>
+                    <h3 class="card-title">Pilot Board Master</h3>
+                    <p class="card-desc">Marcador para quadro branco de alta performance.</p>
+                    <div class="card-footer">
+                        <span class="card-stock">✓ Em estoque</span>
+                        <button class="btn-details" data-product="Pilot Board Master">Ver Detalhes</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="marcadores" data-name="Caneta Poster" data-desc="Caneta para cartazismo com ponta feltro.">
+                <div class="card-image">
+                    <img src="/img/Captura de tela 2026-03-17 140259.png" alt="Caneta Poster">
+                    <div class="card-overlay">
+                        <button class="btn-zoom" aria-label="Ver detalhes de Caneta Poster">🔍</button>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <span class="card-tag">Marcadores</span>
+                    <h3 class="card-title">Caneta Poster</h3>
+                    <p class="card-desc">Caneta para cartazismo com ponta feltro.</p>
+                    <div class="card-footer">
+                        <span class="card-stock">✓ Em estoque</span>
+                        <button class="btn-details" data-product="Caneta Poster">Ver Detalhes</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ferramentas -->
+            <div class="product-card" data-category="ferramentas" data-name="Grampeador Rocama" data-desc="Grampeador profissional para chassis de serigrafia.">
+                <div class="card-image">
+                    <img src="/img/Captura de tela 2026-03-17 140252.png" alt="Grampeador Rocama">
+                    <div class="card-overlay">
+                        <button class="btn-zoom" aria-label="Ver detalhes de Grampeador Rocama">🔍</button>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <span class="card-tag">Ferramentas</span>
+                    <h3 class="card-title">Grampeador Rocama</h3>
+                    <p class="card-desc">Grampeador profissional para chassis de serigrafia.</p>
+                    <div class="card-footer">
+                        <span class="card-stock">✓ Em estoque</span>
+                        <button class="btn-details" data-product="Grampeador Rocama">Ver Detalhes</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="ferramentas" data-name="Estilete Profissional" data-desc="Estilete de precisão para corte de vinil e materiais.">
+                <div class="card-image">
+                    <img src="/img/Captura de tela 2026-03-17 140252.png" alt="Estilete Profissional">
+                    <div class="card-overlay">
+                        <button class="btn-zoom" aria-label="Ver detalhes de Estilete Profissional">🔍</button>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <span class="card-tag">Ferramentas</span>
+                    <h3 class="card-title">Estilete Profissional</h3>
+                    <p class="card-desc">Estilete de precisão para corte de vinil e materiais.</p>
+                    <div class="card-footer">
+                        <span class="card-stock">✓ Em estoque</span>
+                        <button class="btn-details" data-product="Estilete Profissional">Ver Detalhes</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cartazes -->
+            <div class="product-card" data-category="cartazes" data-name="Cartaz de Oferta" data-desc="Cartaz PDV para promoções e ofertas.">
+                <div class="card-image">
+                    <img src="/img/Captura de tela 2026-03-17 140241.png" alt="Cartaz de Oferta">
+                    <div class="card-overlay">
+                        <button class="btn-zoom" aria-label="Ver detalhes de Cartaz de Oferta">🔍</button>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <span class="card-tag">Cartazes</span>
+                    <h3 class="card-title">Cartaz de Oferta</h3>
+                    <p class="card-desc">Cartaz PDV para promoções e ofertas.</p>
+                    <div class="card-footer">
+                        <span class="card-stock">✓ Em estoque</span>
+                        <button class="btn-details" data-product="Cartaz de Oferta">Ver Detalhes</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="cartazes" data-name="Cartaz Zig-Zag" data-desc="Cartaz explosão para destaque em promoções.">
+                <div class="card-image">
+                    <img src="/img/Captura de tela 2026-03-17 140159.png" alt="Cartaz Zig-Zag">
+                    <div class="card-overlay">
+                        <button class="btn-zoom" aria-label="Ver detalhes de Cartaz Zig-Zag">🔍</button>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <span class="card-tag">Cartazes</span>
+                    <h3 class="card-title">Cartaz Zig-Zag</h3>
+                    <p class="card-desc">Cartaz explosão para destaque em promoções.</p>
+                    <div class="card-footer">
+                        <span class="card-stock">✓ Em estoque</span>
+                        <button class="btn-details" data-product="Cartaz Zig-Zag">Ver Detalhes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL -->
+    <div class="modal-overlay" id="productModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-container">
+            <button class="modal-close" id="modalClose" aria-label="Fechar modal">×</button>
+            <div class="modal-content">
+                <div class="modal-image">
+                    <img src="" alt="" id="modalImg">
+                </div>
+                <div class="modal-info">
+                    <span class="modal-tag" id="modalTag">Categoria</span>
+                    <h2 class="modal-title" id="modalTitle">Nome do Produto</h2>
+                    <p class="modal-desc" id="modalDesc">Descrição completa do produto.</p>
+                    <div class="modal-details">
+                        <h4>Detalhes do Produto</h4>
+                        <ul id="modalFeatures">
+                            <li>✓ Produto profissional para serigrafia</li>
+                            <li>✓ Qualidade garantida</li>
+                            <li>✓ Disponível para retirada imediata</li>
+                        </ul>
+                    </div>
+                    <div class="modal-cta">
+                        <p class="modal-stock">✓ Disponível em estoque</p>
+                        <a href="https://wa.me/551121566868" target="_blank" rel="noopener" class="btn-whatsapp">
+                            <span>💬</span> Consultar via WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-logo">EA <span>SERIGRÁFICA</span></div>
+        <p class="footer-copy">© 2025 EA Serigráfica. Todos os direitos reservados.<br>Rua Aricanga, 381 – São Paulo –
+            SP</p>
+        <div class="footer-social">
+            <a href="https://instagram.com/easerigrafica" target="_blank" rel="noopener" title="Instagram">📸</a>
+            <a href="tel:+551121566868" title="Ligar">📞</a>
+            <a href="mailto:ea.serigrafica@gmail.com" title="E-mail">✉️</a>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLOAT -->
+    <a href="https://wa.me/551121566868" target="_blank" rel="noopener" class="wa-float" aria-label="Falar no WhatsApp" title="Falar no WhatsApp">💬</a>
+
+    <script src="/script.js"></script>
+    <script src="/js/produtos.js"></script>
+</body>
+
+</html>
