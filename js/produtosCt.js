@@ -9,11 +9,6 @@ const PRODUCTS = [
     img: '/img/1773622314582_image.png',
     thumbs: ['/img/1773622314582_image.png', '/img/Captura de tela 2026-03-17 140056.png', '/img/Captura de tela 2026-03-17 140128.png'],
     price: 'Sob consulta',
-    priceOld: null,
-    discount: null,
-    volumes: ['250ml','500ml','1L','3,6L','18L'],
-    colors: null,
-    minQty: 'Mínimo: 1 unidade',
     features: [
       { icon: '✓', text: 'Alta cobertura e rendimento' },
       { icon: '✓', text: 'Secagem uniforme e controlada' },
@@ -33,11 +28,6 @@ const PRODUCTS = [
     img: '/img/Captura de tela 2026-03-17 140056.png',
     thumbs: ['/img/Captura de tela 2026-03-17 140056.png', '/img/1773622314582_image.png'],
     price: 'Sob consulta',
-    priceOld: null,
-    discount: null,
-    volumes: ['500ml','1L','3,6L'],
-    colors: null,
-    minQty: 'Mínimo: 1 unidade',
     features: [
       { icon: '✓', text: 'Acabamento fosco profissional' },
       { icon: '✓', text: 'Excelente opacidade em substrato escuro' },
@@ -57,11 +47,6 @@ const PRODUCTS = [
     img: '/img/Captura de tela 2026-03-17 140128.png',
     thumbs: ['/img/Captura de tela 2026-03-17 140128.png', '/img/1773622314582_image.png'],
     price: 'Sob consulta',
-    priceOld: null,
-    discount: null,
-    volumes: ['500g','1kg','5kg'],
-    colors: ['#FFFFFF','#111111','#E53935','#1565C0','#F9A825','#2E7D32'],
-    minQty: 'Mínimo: 500g',
     features: [
       { icon: '✓', text: 'Não seca à temperatura ambiente' },
       { icon: '✓', text: 'Cura por calor (160 °C)' },
@@ -81,11 +66,6 @@ const PRODUCTS = [
     img: '/img/Captura de tela 2026-03-17 140136.png',
     thumbs: ['/img/Captura de tela 2026-03-17 140136.png'],
     price: 'Sob consulta',
-    priceOld: null,
-    discount: null,
-    volumes: ['500ml','1L','3,6L'],
-    colors: null,
-    minQty: 'Mínimo: 1 unidade',
     features: [
       { icon: '✓', text: 'Secagem rápida' },
       { icon: '✓', text: 'Acabamento em brilho ou fosco' },
@@ -105,11 +85,6 @@ const PRODUCTS = [
     img: '/img/Captura de tela 2026-03-17 140056.png',
     thumbs: ['/img/Captura de tela 2026-03-17 140056.png'],
     price: 'Sob consulta',
-    priceOld: null,
-    discount: null,
-    volumes: ['500ml','1L','5L','20L'],
-    colors: null,
-    minQty: 'Mínimo: 500ml',
     features: [
       { icon: '✓', text: 'Ação rápida – dissolve resíduos em segundos' },
       { icon: '✓', text: 'Não danifica telas ou chassis' },
@@ -129,11 +104,6 @@ const PRODUCTS = [
     img: '/img/Captura de tela 2026-03-17 140259.png',
     thumbs: ['/img/Captura de tela 2026-03-17 140259.png'],
     price: 'Sob consulta',
-    priceOld: null,
-    discount: null,
-    volumes: ['Kit 6','Kit 12','Kit 24','Avulso'],
-    colors: ['#E53935','#1565C0','#2E7D32','#111111','#F9A825','#7B1FA2'],
-    minQty: 'Mínimo: 1 kit',
     features: [
       { icon: '✓', text: 'Ponta feltro resistente longa duração' },
       { icon: '✓', text: 'Cores vibrantes e secagem rápida' },
@@ -153,11 +123,6 @@ const PRODUCTS = [
     img: '/img/Captura de tela 2026-03-17 140252.png',
     thumbs: ['/img/Captura de tela 2026-03-17 140252.png'],
     price: 'Sob consulta',
-    priceOld: null,
-    discount: null,
-    volumes: ['Unidade','Com grampos'],
-    colors: null,
-    minQty: 'Mínimo: 1 unidade',
     features: [
       { icon: '✓', text: 'Estrutura em aço carbono tratado' },
       { icon: '✓', text: 'Alta capacidade – 100 grampos' },
@@ -177,11 +142,6 @@ const PRODUCTS = [
     img: '/img/Captura de tela 2026-03-17 140159.png',
     thumbs: ['/img/Captura de tela 2026-03-17 140159.png', '/img/Captura de tela 2026-03-17 140241.png'],
     price: 'Sob consulta',
-    priceOld: null,
-    discount: null,
-    volumes: ['A4','A3','A2','Personalizado'],
-    colors: ['#E53935','#F9A825','#111111','#FFFFFF'],
-    minQty: 'Mínimo: 50 unidades',
     features: [
       { icon: '✓', text: 'Design zig-zag de alto impacto visual' },
       { icon: '✓', text: 'Impressão frente e verso disponível' },
@@ -223,8 +183,8 @@ PRODUCTS.forEach(p => {
   grid.appendChild(card);
 });
 
-/* ─── DRAWER LOGIC ───────────────────────── */
-const drawer = document.getElementById('productDrawer');
+/* ─── DRAWER OPEN / CLOSE ────────────────── */
+const drawer  = document.getElementById('productDrawer');
 const overlay = document.getElementById('drawerOverlay');
 const closeBtn = document.getElementById('drawerClose');
 
@@ -248,26 +208,27 @@ closeBtn.addEventListener('click', closeDrawer);
 overlay.addEventListener('click', closeDrawer);
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDrawer(); });
 
-/* ─── POPULATE ───────────────────────────── */
+/* ─── POPULATE DRAWER ────────────────────── */
 function populateDrawer(p) {
-  // SKU / title
-  document.getElementById('drawerSku').textContent = `REF: ${p.id}`;
-  document.getElementById('drawerTitle').textContent = p.name;
+  // SKU / título / subtítulo / categoria
+  document.getElementById('drawerSku').textContent      = 'REF: ' + p.id;
+  document.getElementById('drawerTitle').textContent    = p.name;
   document.getElementById('drawerSubtitle').textContent = p.subtitle;
-  document.getElementById('drawerCat').textContent = p.category;
+  document.getElementById('drawerCat').textContent      = p.category;
 
-  // Gallery main + thumbs
+  // Imagem principal
   const mainImg = document.getElementById('drawerMainImg');
   mainImg.src = p.img;
   mainImg.alt = p.name;
 
+  // Miniaturas
   const thumbsCont = document.getElementById('drawerThumbs');
   thumbsCont.innerHTML = '';
   if (p.thumbs && p.thumbs.length > 1) {
     p.thumbs.forEach((src, i) => {
       const t = document.createElement('div');
       t.className = 'gallery-thumb' + (i === 0 ? ' active' : '');
-      t.innerHTML = `<img src="${src}" alt="thumb ${i+1}" onerror="this.parentElement.style.display='none'">`;
+      t.innerHTML = `<img src="${src}" alt="thumb ${i + 1}" onerror="this.parentElement.style.display='none'">`;
       t.addEventListener('click', () => {
         mainImg.style.opacity = '0';
         setTimeout(() => { mainImg.src = src; mainImg.style.opacity = '1'; }, 150);
@@ -278,55 +239,10 @@ function populateDrawer(p) {
     });
   }
 
-  // Price
-  const priceMain = document.getElementById('drawerPriceMain');
-  priceMain.textContent = p.price;
-  const priceOldEl = document.getElementById('drawerPriceOld');
-  if (priceOldEl) priceOldEl.remove();
+  // Preço
+  document.getElementById('drawerPriceMain').textContent = p.price;
 
-  // Volumes
-  const volCont = document.getElementById('drawerVolumes');
-  volCont.innerHTML = '';
-  if (p.volumes) {
-    p.volumes.forEach((v, i) => {
-      const btn = document.createElement('button');
-      btn.className = 'variant-btn' + (i === 0 ? ' active' : '');
-      btn.textContent = v;
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('#drawerVolumes .variant-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-      });
-      volCont.appendChild(btn);
-    });
-  }
-
-  // Colors
-  const colorSection = document.getElementById('sectionColors');
-  const colorCont = document.getElementById('drawerColors');
-  if (p.colors) {
-    colorSection.style.display = '';
-    colorCont.innerHTML = '';
-    p.colors.forEach((hex, i) => {
-      const btn = document.createElement('button');
-      btn.className = 'color-btn' + (i === 0 ? ' active' : '');
-      btn.style.background = hex;
-      btn.style.outline = hex === '#FFFFFF' ? '1px solid rgba(255,255,255,.2)' : '';
-      btn.title = hex;
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('.color-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-      });
-      colorCont.appendChild(btn);
-    });
-  } else {
-    colorSection.style.display = 'none';
-  }
-
-  // Qty min label
-  document.getElementById('qtyMin').textContent = p.minQty || '';
-  document.getElementById('qtyInput').value = 1;
-
-  // Features
+  // Características
   const featCont = document.getElementById('drawerFeatures');
   featCont.innerHTML = '';
   p.features.forEach(f => {
@@ -336,47 +252,40 @@ function populateDrawer(p) {
     featCont.appendChild(div);
   });
 
-  // Tabs
+  // Tabs: descrição / aplicações / especificações
   document.getElementById('tab-desc').innerHTML = p.desc;
-  document.getElementById('tab-app').innerHTML = p.app;
+  document.getElementById('tab-app').innerHTML  = p.app;
   document.getElementById('tab-spec').innerHTML = p.spec;
-  // reset tabs
+
+  // Reset tabs para "Descrição" sempre que abrir
   document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab-panel').forEach(panel => panel.classList.remove('active'));
   document.querySelector('.tab-btn[data-tab="desc"]').classList.add('active');
   document.getElementById('tab-desc').classList.add('active');
 
-  // WPP link
-  const msg = encodeURIComponent(`Olá! Tenho interesse no produto: *${p.name}* (Ref: ${p.id}). Poderia me informar preço e disponibilidade?`);
+  // Link WhatsApp personalizado por produto
+  const msg = encodeURIComponent(
+    `Olá! Tenho interesse no produto: *${p.name}* (Ref: ${p.id}). Poderia me informar preço e disponibilidade?`
+  );
   document.getElementById('btnWpp').href = `https://wa.me/551121566868?text=${msg}`;
 }
-
-/* ─── QTY CONTROLS ───────────────────────── */
-const qtyInput = document.getElementById('qtyInput');
-document.getElementById('qtyPlus').addEventListener('click', () => {
-  qtyInput.value = parseInt(qtyInput.value || 1) + 1;
-});
-document.getElementById('qtyMinus').addEventListener('click', () => {
-  const v = parseInt(qtyInput.value || 1);
-  if (v > 1) qtyInput.value = v - 1;
-});
 
 /* ─── TABS ───────────────────────────────── */
 document.querySelectorAll('.tab-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-    document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.tab-panel').forEach(panel => panel.classList.remove('active'));
     btn.classList.add('active');
     document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
   });
 });
 
-/* ─── ORÇAMENTO BTN ──────────────────────── */
+/* ─── BOTÃO ORÇAMENTO ────────────────────── */
 document.getElementById('btnOrc').addEventListener('click', () => {
   const title = document.getElementById('drawerTitle').textContent;
-  const vol = document.querySelector('#drawerVolumes .variant-btn.active')?.textContent || '';
-  const qty = document.getElementById('qtyInput').value;
-  const msg = encodeURIComponent(`Olá! Gostaria de um orçamento:\n\n*Produto:* ${title}\n*Volume:* ${vol}\n*Quantidade:* ${qty} unidades\n\nAguardo retorno, obrigado!`);
+  const msg = encodeURIComponent(
+    `Olá! Gostaria de um orçamento:\n\n*Produto:* ${title}\n\nAguardo retorno, obrigado!`
+  );
   window.open(`https://wa.me/551121566868?text=${msg}`, '_blank');
 });
 
