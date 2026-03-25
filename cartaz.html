@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos – EA Serigráfica</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700;900&family=Barlow+Condensed:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/produtos.css">
+</head>
+
+<body class="produtos-page">
+
+    <!-- NAV -->
+    <nav>
+        <a class="nav-logo" href="/index1.html"><span>EA</span> SERIGRÁFICA</a>
+        <ul class="nav-links">
+            <li><a href="/index1.html#produtos">Produtos</a></li>
+            <li><a href="/produtos.html" class="active">Catálogo</a></li>
+            <li><a href="/cartaz.html">Cartazes</a></li>
+            <li><a href="/index1.html#galeria">Galeria</a></li>
+            <li><a href="/index1.html#sobre">Sobre</a></li>
+            <li><a href="/index1.html#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="products-hero">
+        <div class="hero-left reveal">
+            <p class="hero-eyebrow">Catálogo de Produtos</p>
+            <h1 class="hero-title">
+                Explore Nossos<br>
+                <span class="yellow">Produtos</span>
+            </h1>
+            <p class="hero-sub">
+                Navegue por nosso catálogo completo de tintas, materiais e insumos para serigrafia e comunicação visual.
+            </p>
+        </div>
+        <div class="hero-right">
+            <div class="hero-ink-bg"></div>
+            <div class="hero-splashes">
+                <div class="splash-ring"></div>
+                <div class="splash-ring"></div>
+                <div class="splash-ring"></div>
+            </div>
+            <div class="hero-product-grid">
+                <div class="hero-product-cell">
+                    <img src="/img/1773622314582_image.png" alt="Tintas">
+                </div>
+                <div class="hero-product-cell">
+                    <img src="/img/Captura de tela 2026-03-17 140056.png" alt="Solventes">
+                </div>
+                <div class="hero-product-cell">
+                    <img src="/img/Captura de tela 2026-03-17 140128.png" alt="Plastisol">
+                </div>
+                <div class="hero-product-cell">
+                    <img src="/img/Captura de tela 2026-03-17 140259.png" alt="Marcadores">
+                </div>
+                <div class="hero-product-cell">
+                    <img src="/img/Captura de tela 2026-03-17 140252.png" alt="Ferramentas">
+                </div>
+                <div class="hero-product-cell">
+                    <img src="/img/Captura de tela 2026-03-17 140241.png" alt="Cartazes">
+                </div>
+            </div>
+            <div class="hero-badge">📦 Pronta Entrega – São Paulo</div>
+        </div>
+    </section>
+
+    <!-- TICKER -->
+    <div class="ticker" aria-hidden="true">
+        <div class="ticker-inner">
+            <span class="ticker-item">Catálogo de Produtos <span class="ticker-dot">◆</span></span>
+            <span class="ticker-item">Tintas para Serigrafia <span class="ticker-dot">◆</span></span>
+            <span class="ticker-item">Comunicação Visual <span class="ticker-dot">◆</span></span>
+            <span class="ticker-item">Materiais para Cartazistas <span class="ticker-dot">◆</span></span>
+            <span class="ticker-item">Gênesis · Sicoltex · Plastin · Colordex <span class="ticker-dot">◆</span></span>
+            <span class="ticker-item">Atendemos Profissionais e Empresas <span class="ticker-dot">◆</span></span>
+            <span class="ticker-item">Rua Aricanga, 381 – São Paulo <span class="ticker-dot">◆</span></span>
+        </div>
+    </div>
+
+    <!-- PRODUCTS -->
+    <!-- ── DEMO HEADER ─────────────────────────── -->
+    <div class="demo-header">
+        <h1>CATÁLOGO EA SERIGRÁFICA</h1>
+        <p>Clique em "Ver Detalhes" ou na lupa para abrir o painel do produto</p>
+    </div>
+
+    <!-- ── PRODUCT GRID ───────────────────────── -->
+    <div class="products-grid" id="productsGrid"></div>
+
+    <!-- ── OVERLAY ───────────────────────────── -->
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+
+    <!-- ── PRODUCT DRAWER ─────────────────────── -->
+    <div class="product-drawer" id="productDrawer" role="dialog" aria-modal="true" aria-label="Detalhes do produto">
+        <button class="drawer-close" id="drawerClose" aria-label="Fechar">✕</button>
+
+        <div class="drawer-body">
+
+            <!-- Gallery -->
+            <div class="drawer-gallery">
+                <div class="gallery-main">
+                    <img src="" alt="" id="drawerMainImg">
+                    <span class="gallery-badge-cat" id="drawerCat">Categoria</span>
+                    <span class="gallery-badge-stock">✓ Em estoque</span>
+                </div>
+                <div class="gallery-thumbs" id="drawerThumbs"></div>
+            </div>
+
+            <!-- Info -->
+            <div class="drawer-info">
+
+                <!-- Top: sku / title / subtitle / rating -->
+                <div class="drawer-top">
+                    <span class="drawer-sku" id="drawerSku">SKU-0001</span>
+                    <h2 class="drawer-title" id="drawerTitle">Nome do Produto</h2>
+                    <p class="drawer-subtitle" id="drawerSubtitle">Descrição</p>
+                    <div class="drawer-rating">
+                        <div class="stars">★★★★★</div>
+                        <span class="rating-text">4.9 · 38 avaliações</span>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <!-- Price -->
+                <div class="drawer-price" id="drawerPrice">
+                    <span class="price-main" id="drawerPriceMain">Sob consulta</span>
+                </div>
+
+
+
+
+                <div class="divider"></div>
+
+                <!-- Features -->
+                <div>
+                    <div class="drawer-section-label">Características</div>
+                    <div class="features-list" id="drawerFeatures"></div>
+                </div>
+
+                <div class="divider"></div>
+
+                <!-- Tabs: Descrição / Aplicações / Especificações -->
+                <div>
+                    <div class="info-tabs">
+                        <button class="tab-btn active" data-tab="desc">Descrição</button>
+                        <button class="tab-btn" data-tab="app">Aplicações</button>
+                        <button class="tab-btn" data-tab="spec">Especificações</button>
+                    </div>
+                    <div class="tab-panel active" id="tab-desc"></div>
+                    <div class="tab-panel" id="tab-app"></div>
+                    <div class="tab-panel" id="tab-spec"></div>
+                </div>
+
+            </div><!-- /drawer-info -->
+        </div><!-- /drawer-body -->
+
+        <!-- Footer CTA -->
+        <div class="drawer-footer">
+            <div class="cta-row">
+                <a href="https://wa.me/551121566868" target="_blank" rel="noopener" class="btn-whatsapp" id="btnWpp">
+                    <span>💬</span> WhatsApp
+                </a>
+                <button class="btn-orcamento" id="btnOrc">
+                    <span>📋</span> Solicitar Orçamento
+                </button>
+            </div>
+            <button class="btn-telefone">
+                <span>📞</span> Ligar: (11) 2156-6868
+            </button>
+            <div class="footer-trust">
+                <span class="trust-item"><span class="trust-icon">📦</span>Pronta entrega SP</span>
+                <span class="trust-item"><span class="trust-icon">🔒</span>Compra segura</span>
+                <span class="trust-item"><span class="trust-icon">🏷️</span>Preço justo</span>
+            </div>
+        </div>
+
+    </div><!-- /product-drawer -->
+
+    <!-- TOAST -->
+    <div class="toast" id="toast"></div>
+
+
+    <!-- MODAL -->
+    <div class="modal-overlay" id="productModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-container">
+            <button class="modal-close" id="modalClose" aria-label="Fechar modal">×</button>
+            <div class="modal-content">
+                <div class="modal-image">
+                    <img src="" alt="" id="modalImg">
+                </div>
+                <div class="modal-info">
+                    <span class="modal-tag" id="modalTag">Categoria</span>
+                    <h2 class="modal-title" id="modalTitle">Nome do Produto</h2>
+                    <p class="modal-desc" id="modalDesc">Descrição completa do produto.</p>
+                    <div class="modal-details">
+                        <h4>Detalhes do Produto</h4>
+                        <ul id="modalFeatures">
+                            <li>✓ Produto profissional para serigrafia</li>
+                            <li>✓ Qualidade garantida</li>
+                            <li>✓ Disponível para retirada imediata</li>
+                        </ul>
+                    </div>
+                    <div class="modal-cta">
+                        <p class="modal-stock">✓ Disponível em estoque</p>
+                        <a href="https://wa.me/551121566868" target="_blank" rel="noopener" class="btn-whatsapp">
+                            <span>💬</span> Consultar via WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-logo">EA <span>SERIGRÁFICA</span></div>
+        <p class="footer-copy">© 2025 EA Serigráfica. Todos os direitos reservados.<br>Rua Aricanga, 381 – São Paulo –
+            SP</p>
+        <div class="footer-social">
+            <a href="https://instagram.com/easerigrafica" target="_blank" rel="noopener" title="Instagram">📸</a>
+            <a href="tel:+551121566868" title="Ligar">📞</a>
+            <a href="mailto:ea.serigrafica@gmail.com" title="E-mail">✉️</a>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLOAT -->
+    <a href="https://wa.me/551121566868" target="_blank" rel="noopener" class="wa-float" aria-label="Falar no WhatsApp"
+        title="Falar no WhatsApp">💬</a>
+
+    <script src="/script.js"></script>
+    <script src="/js/cartaz.js"></script>
+</body>
+
+</html>
