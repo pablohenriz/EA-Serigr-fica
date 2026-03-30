@@ -8,7 +8,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700;900&family=Barlow+Condensed:wght@400;700;900&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -27,64 +27,80 @@
         </ul>
     </nav>
 
-    <!-- HERO -->
-    <section class="hero">
-        <div class="hero-left reveal">
-            <p class="hero-eyebrow">São Paulo · Desde 1990</p>
-            <h1 class="hero-title">
-                Tudo para<br>
-                <span class="yellow">Serigrafia</span><br>
-                &amp; <span class="red">Comunicação</span><br>
-                Visual
-            </h1>
-            <p class="hero-sub">
-                Tintas, materiais e insumos para serigrafistas, cartazistas e comunicação visual. Atendemos
-                profissionais e empresas com os melhores produtos do mercado.
-            </p>
-            <div class="hero-ctas">
-                <a href="#contato" class="btn-primary">Fale Conosco</a>
-                <a href="/produtos.html" class="btn-outline">Ver Catálogo</a>
+
+    <div class="carousel-wrap">
+        <div class="carousel-counter">
+            <span class="counter-cur" id="cur">01</span> / 06
+        </div>
+
+        <div class="carousel-container">
+            <div class="carousel-track-outer">
+                <div class="carousel-track" id="track">
+
+                    <!-- SLIDE 1 -->
+                    <div class="carousel-slide active">
+                        <img src="/img/1773622314582_image.png" alt="Tintas">
+                        <div class="slide-overlay"></div>
+                    </div>
+
+                    <!-- SLIDE 2 -->
+                    <div class="carousel-slide">
+                        <img src="/img/Captura de tela 2026-03-17 140056.png" alt="Solventes">
+                        <div class="slide-overlay"></div>
+                    </div>
+
+                    <!-- SLIDE 3 -->
+                    <div class="carousel-slide">
+                        <img src="/img/Captura de tela 2026-03-17 140128.png" alt="Plastisol">
+                        <div class="slide-overlay"></div>
+                    </div>
+
+                    <!-- SLIDE 4 -->
+                    <div class="carousel-slide">
+                        <img src="/img/Captura de tela 2026-03-17 140259.png" alt="Marcadores">
+                        <div class="slide-overlay"></div>
+                    </div>
+
+                    <!-- SLIDE 5 -->
+                    <div class="carousel-slide">
+                        <img src="/img/Captura de tela 2026-03-17 140252.png" alt="Ferramentas">
+                        <div class="slide-overlay"></div>
+                    </div>
+
+                    <!-- SLIDE 6 -->
+                    <div class="carousel-slide">
+                        <img src="/img/Captura de tela 2026-03-17 140241.png" alt="Cartazes">
+                        <div class="slide-overlay"></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- TÍTULO SOBREPOSTO AO CARROSSEL -->
+            <div class="hero-left reveal">
+                <p class="hero-eyebrow">São Paulo · Desde 1990</p>
+                <h1 class="hero-title">
+                    Tudo para<br>
+                    <span class="yellow">Serigrafia</span><br>
+                    &amp; <span class="red">Comunicação</span><br>
+                    Visual
+                </h1>
+                <p class="hero-sub">
+                    Tintas, materiais e insumos para serigrafistas, cartazistas e comunicação visual.
+                    Atendemos profissionais e empresas com os melhores produtos do mercado.
+                </p>
+                <div class="hero-ctas">
+                    <a href="#contato" class="btn-primary">Fale Conosco</a>
+                    <a href="/produtos.html" class="btn-outline">Ver Catálogo</a>
+                </div>
             </div>
         </div>
-        <div class="hero-right">
-            <div class="hero-ink-bg"></div>
-            <div class="hero-splashes">
-                <div class="splash-ring"></div>
-                <div class="splash-ring"></div>
-                <div class="splash-ring"></div>
-            </div>
-            <div class="hero-product-grid">
-                <div class="hero-product-cell">
-                    <img src="/img/1773622314582_image.png" alt="Tintas Gênesis">
-                </div>
-                <div class="hero-product-cell">
-                    <img src="/img/Captura de tela 2026-03-17 140024.png" alt="Vinílicos">
-                </div>
-                <div class="hero-product-cell">
-                    <img src="/img/Captura de tela 2026-03-17 140056.png" alt="Tintas Serigrafia">
-                </div>
-                <div class="hero-product-cell">
-                    <img src="/img/Captura de tela 2026-03-17 140103.png" alt="Materiais">
-                </div>
-                <div class="hero-product-cell">
-                    <img src="/img/Captura de tela 2026-03-17 140109.png" alt="Ferramentas">
-                </div>
-                <div class="hero-product-cell">
-                    <img src="/img/Captura de tela 2026-03-17 140116.png" alt="Marcadores">
-                </div>
-                <div class="hero-product-cell">
-                    <img src="/img/Captura de tela 2026-03-17 140128.png" alt="Cartazistas">
-                </div>
-                <div class="hero-product-cell">
-                    <img src="/img/Captura de tela 2026-03-17 140136.png" alt="Cartazes Oferta">
-                </div>
-                <div class="hero-product-cell">
-                    <img src="/img/Captura de tela 2026-03-17 140147.png" alt="EA Serigráfica">
-                </div>
-            </div>
-            <div class="hero-badge">📦 Pronta Entrega – São Paulo</div>
-        </div>
-    </section>
+
+        <button class="carousel-btn prev" id="prev">&#8592;</button>
+        <button class="carousel-btn next" id="next">&#8594;</button>
+        <div class="carousel-dots" id="dots"></div>
+    </div>
+
 
     <!-- TICKER -->
     <div class="ticker" aria-hidden="true">
@@ -122,8 +138,75 @@
                 <button class="filter-tab">Ferramentas</button>
             </div>
         </div>
+
+        <!-- CARROSSEL DE PRODUTOS -->
+        <div class="products-carousel-wrap">
+            <div class="products-carousel-container">
+                <div class="products-carousel-track" id="productsCarouselTrack">
+                    <div class="products-carousel-item reveal">
+                        <img src="/img/1773622314582_image.png" alt="Tintas Gênesis Serigrafia">
+                        <div class="products-carousel-overlay">
+                            <p class="carousel-product-name">Tintas Gênesis</p>
+                            <p class="carousel-product-desc">Tintas seribrill, vinílica fosca e metálica.</p>
+                        </div>
+                    </div>
+                    <div class="products-carousel-item reveal">
+                        <img src="/img/Captura de tela 2026-03-17 140056.png" alt="Solventes e Tintas Sicoltex">
+                        <div class="products-carousel-overlay">
+                            <p class="carousel-product-name">Sicoltex & Solventes</p>
+                            <p class="carousel-product-desc">Tintas vinílica fosca e solventes desmoldantes.</p>
+                        </div>
+                    </div>
+                    <div class="products-carousel-item reveal">
+                        <img src="/img/Captura de tela 2026-03-17 140128.png" alt="Colordex Plastisol">
+                        <div class="products-carousel-overlay">
+                            <p class="carousel-product-name">Colordex</p>
+                            <p class="carousel-product-desc">Plastisol, relevo e tinta permanente.</p>
+                        </div>
+                    </div>
+                    <div class="products-carousel-item reveal">
+                        <img src="/img/Captura de tela 2026-03-17 140259.png" alt="Marcadores Metiq e Pilot">
+                        <div class="products-carousel-overlay">
+                            <p class="carousel-product-name">Marcadores Profissionais</p>
+                            <p class="carousel-product-desc">Metiq, Pilot e Caneta Poster.</p>
+                        </div>
+                    </div>
+                    <div class="products-carousel-item reveal">
+                        <img src="/img/Captura de tela 2026-03-17 140252.png" alt="Ferramentas Grampeadores">
+                        <div class="products-carousel-overlay">
+                            <p class="carousel-product-name">Ferramentas e Suprimentos</p>
+                            <p class="carousel-product-desc">Grampeadores, fitas, estilete.</p>
+                        </div>
+                    </div>
+                    <div class="products-carousel-item reveal">
+                        <img src="/img/Captura de tela 2026-03-17 140241.png" alt="Cartazes de Oferta">
+                        <div class="products-carousel-overlay">
+                            <p class="carousel-product-name">Cartazes de Oferta</p>
+                            <p class="carousel-product-desc">Cartazes prontos para PDV.</p>
+                        </div>
+                    </div>
+                    <div class="products-carousel-item reveal">
+                        <img src="/img/Captura de tela 2026-03-17 140159.png" alt="Cartazes Zig Zag">
+                        <div class="products-carousel-overlay">
+                            <p class="carousel-product-name">Cartazes Zig-Zag</p>
+                            <p class="carousel-product-desc">Modelos explosão e zig-zag.</p>
+                        </div>
+                    </div>
+                    <div class="products-carousel-item reveal">
+                        <img src="/img/Captura de tela 2026-03-17 140136.png" alt="Plastin Tintas">
+                        <div class="products-carousel-overlay">
+                            <p class="carousel-product-name">Tintas Plastin</p>
+                            <p class="carousel-product-desc">Vernizes e solventes profissionais.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="products-carousel-btn prev" id="productsCarouselPrev">&#8592;</button>
+            <button class="products-carousel-btn next" id="productsCarouselNext">&#8594;</button>
+        </div>
+
         <div class="products-grid">
-            <div class="product-card featured reveal">
+            <div class="product-card reveal">
                 <img src="/img/1773622314582_image.png" alt="Tintas Gênesis Serigrafia">
                 <div class="product-overlay">
                     <p class="product-name">Tintas Gênesis</p>
@@ -530,6 +613,8 @@
 
     <script src="/script.js">
     </script>
+    <script src="/js/script.js"></script>
+    <script src="/js/products-carousel.js"></script>
 </body>
 
 </html>
