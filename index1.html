@@ -13,19 +13,67 @@
 
 <body>
 
-    <!-- NAV -->
-    <nav>
-        <a class="nav-logo" href="#"><span>EA</span> SERIGRÁFICA</a>
-        <ul class="nav-links">
-            <li><a href="#produtos">Produtos</a></li>
-            <li><a href="/produtos.html">Catálogo</a></li>
-            <li><a href="/cartaz.html">Cartazes</a></li>
-            <li><a href="#categorias">Categorias</a></li>
-            <li><a href="#marcas">Marcas</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </nav>
+    <!-- HEADER -->
+    <header class="header">
+        <!-- Top Bar -->
+        <div class="header-top ">
+            <div class="header-top-left">
+                <p>📦 ENVIO RÁPIDO de 12 a 24h após a compra</p>
+            </div>
+            <!-- <div class="header-top-right">
+                <a href="#duvidas">Dúvidas</a>
+                <a href="#contato">Contato</a>
+            </div> -->
+        </div>
+
+        <!-- Main Header -->
+        <nav class="header-main ">
+            <div class="header-main2 espacamento">
+                <!-- Logo -->
+            <div class="header-logo">
+                <a href="#"><span>EA</span> SERIGRÁFICA</a>
+                <p class="tagline">Tintas, Materiais e Serigrafia</p>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="header-search">
+                <input type="text" placeholder="O que você procura?" aria-label="Buscar produtos">
+                <button type="submit" aria-label="Pesquisar"><img src="/img/icons/lupa (1).png" alt=""></button>
+            </div>
+
+            <!-- Right Utilities -->
+            <div class="header-utilities">
+                <div class="utility-item">
+                    <span title="Atendimento"><img src="/img/icons/comente (1).png" alt=""></span>
+                    <small>Central de<br>Atendimento</small>
+                </div>
+                <div class="utility-item">
+                    <span title="Duvidas"><img src="/img/icons/pergunta.png" alt=""></span>
+                    <small>Duvidas</small>
+                </div>
+                <div class="utility-item">
+                    <span title="Atendimento"><img src="/img/icons/pino-de-localizacao.png" alt=""></span>
+                    <small>Entrega</small>
+                </div>
+            </div>
+            </div>
+        </nav>
+
+        <!-- Categories Menu -->
+        <nav class="categories-menu espacamento">
+            <button class="category-toggle">☰ Todas as categorias</button>
+            <ul class="categories-list">
+                <li><a href="#tintas">Tintas para Serigrafia</a></li>
+                <li><a href="#solventes">Solventes e Limpadores</a></li>
+                <li><a href="#tecidos">Tecidos e Matrizes</a></li>
+                <li><a href="#ferramentas">Ferramentas e Equipamentos</a></li>
+                <li><a href="#plastisol">Plastisol</a></li>
+                <li><a href="#marcadores">Marcadores e Emulsões</a></li>
+                <li><a href="#cartazes">Cartazes e Impressão</a></li>
+                <li><a href="#outros">Outros</a></li>
+            </ul>
+        </nav>
+    </header>
 
 
     <div class="carousel-wrap">
@@ -123,8 +171,8 @@
     </div>
 
     <!-- PRODUCTS -->
-    <section id="produtos">
-        <div class="products-header reveal">
+    <section id="produtosI">
+        <div class="products-header reveal espacamento">
             <div>
                 <p class="section-label">Nossos Produtos</p>
                 <h2 class="section-title">Linha Completa<br>de Materiais</h2>
@@ -140,130 +188,219 @@
         </div>
 
         <!-- CARROSSEL DE PRODUTOS -->
-        <div class="products-carousel-wrap">
+        <div class="products-carousel-wrap espacamento">
             <div class="products-carousel-container">
                 <div class="products-carousel-track" id="productsCarouselTrack">
                     <div class="products-carousel-item reveal">
-                        <img src="/img/1773622314582_image.png" alt="Tintas Gênesis Serigrafia">
+                        <div class="product-badge">8% OFF</div>
+                        <div class="product-overlay">
+                            <img src="/img/1773622314582_image.png" alt="Tintas Gênesis Serigrafia">
+                        </div>
                         <div class="products-carousel-overlay">
                             <p class="carousel-product-name">Tintas Gênesis</p>
                             <p class="carousel-product-desc">Tintas seribrill, vinílica fosca e metálica.</p>
+                            <p class="product-price">R$ 89,90</p>
                         </div>
                     </div>
                     <div class="products-carousel-item reveal">
-                        <img src="/img/Captura de tela 2026-03-17 140056.png" alt="Solventes e Tintas Sicoltex">
+                        <div class="product-badge">5% OFF</div>
+                        <div class="product-overlay">
+                            <img src="/img/Captura de tela 2026-03-17 140056.png" alt="Solventes e Tintas Sicoltex">
+                        </div>
                         <div class="products-carousel-overlay">
                             <p class="carousel-product-name">Sicoltex & Solventes</p>
                             <p class="carousel-product-desc">Tintas vinílica fosca e solventes desmoldantes.</p>
+                            <p class="product-price">R$ 125,90</p>
                         </div>
                     </div>
                     <div class="products-carousel-item reveal">
-                        <img src="/img/Captura de tela 2026-03-17 140128.png" alt="Colordex Plastisol">
+                        <div class="product-badge">10% OFF</div>
+                        <div class="product-overlay">
+                            <img src="/img/Captura de tela 2026-03-17 140128.png" alt="Colordex Plastisol">
+                        </div>
                         <div class="products-carousel-overlay">
                             <p class="carousel-product-name">Colordex</p>
                             <p class="carousel-product-desc">Plastisol, relevo e tinta permanente.</p>
+                            <p class="product-price">R$ 156,90</p>
                         </div>
                     </div>
+
                     <div class="products-carousel-item reveal">
-                        <img src="/img/Captura de tela 2026-03-17 140259.png" alt="Marcadores Metiq e Pilot">
+                        <div class="product-badge">12% OFF</div>
+                        <div class="product-overlay">
+                            <img src="/img/Captura de tela 2026-03-17 140259.png" alt="Marcadores Metiq e Pilot">
+                        </div>
                         <div class="products-carousel-overlay">
                             <p class="carousel-product-name">Marcadores Profissionais</p>
                             <p class="carousel-product-desc">Metiq, Pilot e Caneta Poster.</p>
+                            <p class="product-price">R$ 45,90</p>
                         </div>
                     </div>
                     <div class="products-carousel-item reveal">
-                        <img src="/img/Captura de tela 2026-03-17 140252.png" alt="Ferramentas Grampeadores">
+                        <div class="product-badge">7% OFF</div>
+                        <div class="product-overlay">
+                            <img src="/img/Captura de tela 2026-03-17 140252.png" alt="Ferramentas Grampeadores">
+                        </div>
                         <div class="products-carousel-overlay">
                             <p class="carousel-product-name">Ferramentas e Suprimentos</p>
                             <p class="carousel-product-desc">Grampeadores, fitas, estilete.</p>
+                            <p class="product-price">R$ 78,90</p>
                         </div>
                     </div>
                     <div class="products-carousel-item reveal">
-                        <img src="/img/Captura de tela 2026-03-17 140241.png" alt="Cartazes de Oferta">
+                        <div class="product-badge">9% OFF</div>
+                        <div class="product-overlay">
+                            <img src="/img/Captura de tela 2026-03-17 140241.png" alt="Cartazes de Oferta">
+                        </div>
                         <div class="products-carousel-overlay">
                             <p class="carousel-product-name">Cartazes de Oferta</p>
                             <p class="carousel-product-desc">Cartazes prontos para PDV.</p>
+                            <p class="product-price">R$ 65,90</p>
                         </div>
                     </div>
+
                     <div class="products-carousel-item reveal">
-                        <img src="/img/Captura de tela 2026-03-17 140159.png" alt="Cartazes Zig Zag">
+                        <div class="product-badge">6% OFF</div>
+                        <div class="product-overlay">
+                            <img src="/img/Captura de tela 2026-03-17 140159.png" alt="Cartazes Zig Zag">
+                        </div>
                         <div class="products-carousel-overlay">
                             <p class="carousel-product-name">Cartazes Zig-Zag</p>
-                            <p class="carousel-product-desc">Modelos explosão e zig-zag.</p>
+                            <p class="carousel-product-desc">Modelos explosão e zig-zag amarelos.</p>
+                            <p class="product-price">R$ 55,90</p>
                         </div>
                     </div>
                     <div class="products-carousel-item reveal">
-                        <img src="/img/Captura de tela 2026-03-17 140136.png" alt="Plastin Tintas">
+                        <div class="product-badge">8% OFF</div>
+                        <div class="product-overlay">
+                            <img src="/img/Captura de tela 2026-03-17 140136.png" alt="Plastin Tintas">
+                        </div>
                         <div class="products-carousel-overlay">
                             <p class="carousel-product-name">Tintas Plastin</p>
                             <p class="carousel-product-desc">Vernizes e solventes profissionais.</p>
+                            <p class="product-price">R$ 92,90</p>
                         </div>
                     </div>
                 </div>
+                <button class="products-carousel-btn prev" id="productsCarouselPrev">&#8592;</button>
+                <button class="products-carousel-btn next" id="productsCarouselNext">&#8594;</button>
             </div>
-            <button class="products-carousel-btn prev" id="productsCarouselPrev">&#8592;</button>
-            <button class="products-carousel-btn next" id="productsCarouselNext">&#8594;</button>
-        </div>
 
-        <div class="products-grid">
-            <div class="product-card reveal">
-                <img src="/img/1773622314582_image.png" alt="Tintas Gênesis Serigrafia">
-                <div class="product-overlay">
-                    <p class="product-name">Tintas Gênesis</p>
-                    <p class="product-desc">Tintas seribrill, vinílica fosca e metálica para serigrafia profissional.
-                    </p>
+            <div class="products-grid espacamento">
+                <div class="product-card reveal">
+                    <div class="product-badge">8% OFF</div>
+                    <div class="product-overlay">
+                        <img src="/img/1773622314582_image.png" alt="Tintas Gênesis Serigrafia">
+                    </div>
+                    <div class="product-overlay-2">
+                        <p class="product-name">Tintas Gênesis</p>
+                        <p class="product-desc">Tintas seribrill, vinílica fosca e metálica para serigrafia
+                            profissional.
+                        </p>
+                        <p class="product-price">R$ 89,90</p>
+                        <p class="product-installment">até 3x de R$ 30,00 sem juros</p>
+
+                        <button class="btn-shop">Ver Detalhes</button>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <div class="product-badge">5% OFF</div>
+                    <div class="product-overlay">
+                        <img src="/img/Captura de tela 2026-03-17 140056.png" alt="Solventes e Tintas Sicoltex">
+                    </div>
+                    <div class="product-overlay-2">
+                        <p class="product-name">Sicoltex & Solventes SOL</p>
+                        <p class="product-desc">Tintas vinílica fosca e solventes desmoldantes.</p>
+                        <p class="product-price">R$ 125,90</p>
+                        <p class="product-installment">até 4x de R$ 31,50 sem juros</p>
+
+                        <button class="btn-shop">Ver Detalhes</button>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <div class="product-badge">10% OFF</div>
+                    <div class="product-overlay">
+                        <img src="/img/Captura de tela 2026-03-17 140128.png" alt="Colordex Plastisol">
+                    </div>
+                    <div class="product-overlay-2">
+                        <p class="product-name">Colordex</p>
+                        <p class="product-desc">Plastisol, relevo e tinta permanente para serigrafia.</p>
+                        <p class="product-price">R$ 156,90</p>
+                        <p class="product-installment">até 4x de R$ 39,23 sem juros</p>
+
+                        <button class="btn-shop">Ver Detalhes</button>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <div class="product-badge">12% OFF</div>
+                    <div class="product-overlay">
+                        <img src="/img/Captura de tela 2026-03-17 140259.png" alt="Marcadores Metiq e Pilot">
+                    </div>
+                    <div class="product-overlay-2">
+                        <p class="product-name">Marcadores Profissionais</p>
+                        <p class="product-desc">Metiq, Pilot e Caneta Poster para cartazismo.</p>
+                        <p class="product-price">R$ 45,90</p>
+                        <p class="product-installment">até 2x de R$ 23,00 sem juros</p>
+                        <button class="btn-shop">Ver Detalhes</button>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <div class="product-badge">7% OFF</div>
+                    <div class="product-overlay">
+                        <img src="/img/Captura de tela 2026-03-17 140252.png" alt="Ferramentas Grampeadores">
+                    </div>
+                    <div class="product-overlay-2">
+                        <p class="product-name">Ferramentas e Suprimentos</p>
+                        <p class="product-desc">Grampeadores, fitas, estilete e materiais auxiliares.</p>
+                        <p class="product-price">R$ 78,90</p>
+                        <p class="product-installment">até 3x de R$ 26,30 sem juros</p>
+
+                        <button class="btn-shop">Ver Detalhes</button>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <div class="product-badge">9% OFF</div>
+                    <div class="product-overlay">
+                        <img src="/img/Captura de tela 2026-03-17 140241.png" alt="Cartazes de Oferta">
+                    </div>
+                    <div class="product-overlay-2">
+                        <p class="product-name">Cartazes de Oferta</p>
+                        <p class="product-desc">Cartazes prontos para PDV em diversos formatos e tamanhos.</p>
+                        <p class="product-price">R$ 65,90</p>
+                        <p class="product-installment">até 3x de R$ 22,00 sem juros</p>
+
+                        <button class="btn-shop">Ver Detalhes</button>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <div class="product-badge">6% OFF</div>
+                    <div class="product-overlay">
+                        <img src="/img/Captura de tela 2026-03-17 140159.png" alt="Cartazes Zig Zag">
+                    </div>
+                    <div class="product-overlay-2">
+                        <p class="product-name">Cartazes Zig-Zag</p>
+                        <p class="product-desc">Modelos explosão e zig-zag amarelos para promoções.</p>
+                        <p class="product-price">R$ 55,90</p>
+                        <p class="product-installment">até 2x de R$ 28,00 sem juros</p>
+
+                        <button class="btn-shop">Ver Detalhes</button>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <div class="product-badge">8% OFF</div>
+                    <div class="product-overlay">
+                        <img src="/img/Captura de tela 2026-03-17 140136.png" alt="Plastin Tintas">
+                    </div>
+                    <div class="product-overlay-2">
+                        <p class="product-name">Tintas Plastin</p>
+                        <p class="product-desc">Vernizes e solventes para comunicação visual profissional.</p>
+                        <p class="product-price">R$ 92,90</p>
+                        <p class="product-installment">até 3x de R$ 31,00 sem juros</p>
+
+                        <button class="btn-shop">Ver Detalhes</button>
+                    </div>
                 </div>
             </div>
-            <div class="product-card reveal">
-                <img src="/img/Captura de tela 2026-03-17 140056.png" alt="Solventes e Tintas Sicoltex">
-                <div class="product-overlay">
-                    <p class="product-name">Sicoltex & Solventes SOL</p>
-                    <p class="product-desc">Tintas vinílica fosca e solventes desmoldantes.</p>
-                </div>
-            </div>
-            <div class="product-card reveal">
-                <img src="/img/Captura de tela 2026-03-17 140128.png" alt="Colordex Plastisol">
-                <div class="product-overlay">
-                    <p class="product-name">Colordex</p>
-                    <p class="product-desc">Plastisol, relevo e tinta permanente para serigrafia.</p>
-                </div>
-            </div>
-            <div class="product-card reveal">
-                <img src="/img/Captura de tela 2026-03-17 140259.png" alt="Marcadores Metiq e Pilot">
-                <div class="product-overlay">
-                    <p class="product-name">Marcadores Profissionais</p>
-                    <p class="product-desc">Metiq, Pilot e Caneta Poster para cartazismo.</p>
-                </div>
-            </div>
-            <div class="product-card reveal">
-                <img src="/img/Captura de tela 2026-03-17 140252.png" alt="Ferramentas Grampeadores">
-                <div class="product-overlay">
-                    <p class="product-name">Ferramentas e Suprimentos</p>
-                    <p class="product-desc">Grampeadores, fitas, estilete e materiais auxiliares.</p>
-                </div>
-            </div>
-            <div class="product-card reveal">
-                <img src="/img/Captura de tela 2026-03-17 140241.png" alt="Cartazes de Oferta">
-                <div class="product-overlay">
-                    <p class="product-name">Cartazes de Oferta</p>
-                    <p class="product-desc">Cartazes prontos para PDV em diversos formatos e tamanhos.</p>
-                </div>
-            </div>
-            <div class="product-card reveal">
-                <img src="/img/Captura de tela 2026-03-17 140159.png" alt="Cartazes Zig Zag">
-                <div class="product-overlay">
-                    <p class="product-name">Cartazes Zig-Zag</p>
-                    <p class="product-desc">Modelos explosão e zig-zag amarelos para promoções.</p>
-                </div>
-            </div>
-            <div class="product-card reveal">
-                <img src="/img/Captura de tela 2026-03-17 140136.png" alt="Plastin Tintas">
-                <div class="product-overlay">
-                    <p class="product-name">Tintas Plastin</p>
-                    <p class="product-desc">Vernizes e solventes para comunicação visual profissional.</p>
-                </div>
-            </div>
-        </div>
     </section>
 
     <!-- GALERIA / VISUALIZAÇÃO
@@ -359,11 +496,11 @@
 
     <!-- CATEGORIES -->
     <section id="categorias">
-        <div class="reveal">
+        <div class="reveal espacamento">
             <p class="section-label">Categorias</p>
             <h2 class="section-title">O Que Você<br>Vai Encontrar</h2>
         </div>
-        <div class="categories-grid">
+        <div class="categories-grid espacamento">
             <div class="cat-card reveal">
                 <span class="cat-number">01</span>
                 <span class="cat-icon">🎨</span>
