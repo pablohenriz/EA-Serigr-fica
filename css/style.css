@@ -49,6 +49,7 @@ body::before {
     width: 100%;
 }
 
+
 /* ── HEADER ── */
 .header {
     position: fixed;
@@ -59,6 +60,27 @@ body::before {
     background: var(--black);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
+
+.header-menu .group-menu {
+    display: flex;
+    gap: 40px;
+}
+
+.header-menu .group-menu li {
+    list-style: none;
+}
+
+.header-menu .group-menu a {
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.2s;
+
+}
+
+.header-menu .group-menu a:hover {
+    color: var(--yellow);   
+}
+
 
 /* Top Bar */
 .header-top {
