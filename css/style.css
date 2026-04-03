@@ -27,8 +27,15 @@ html {
 }
 
 .espacamento {
-    margin-left: 200px;
-    margin-right: 200px;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.espacamento1 {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 body {
@@ -462,14 +469,14 @@ body::before {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 5rem 3rem 5rem 4rem;
+    padding: 5rem 3rem 5rem 0;
     position: absolute;
     top: 0;
     left: 0;
     width: 50%;
     height: 100%;
     z-index: 10;
-    margin-left: 150px;
+    margin-left: 200px;
 }
 
 .hero-eyebrow {
@@ -538,6 +545,7 @@ body::before {
     display: inline-block;
     clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px));
     transition: background 0.2s, transform 0.15s;
+    margin-top: 30px;
 }
 
 .btn-primary:hover {
@@ -690,6 +698,7 @@ body::before {
 
 .carousel-container {
     position: relative;
+    max-height: 1100px;
 }
 
 .carousel-track-outer {
@@ -737,14 +746,14 @@ body::before {
 
 .slide-content {
     position: absolute;
-    left: 0;
+    left: 200px;
+    right: 200px;
     bottom: 0;
     top: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 2rem 2.5rem;
-    max-width: 55%;
 }
 
 .slide-eyebrow {
@@ -1054,6 +1063,66 @@ section {
     margin-bottom: 1.5rem;
 }
 
+
+ /* -- section-label 1 -- */
+.section-label1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--yellow);
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+}
+
+.section-label1::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 2px;
+    background: var(--yellow);
+}
+
+.section-title1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    letter-spacing: 0.02em;
+    line-height: 0.95;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.products-intro1 {
+    width: 500px;
+}
+
+/* ── CARTAZ ── */
+.group-img-slash {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.group-img-slash img {
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    object-fit: cover;
+    transition: all 0.3s ease;
+    margin-top: 50px;
+}
+
+#img-slash {
+    margin-top: 0px;
+}
+
 /* ── PRODUCTS ── */
 #produtos {
     background: var(--black);
@@ -1071,6 +1140,17 @@ section {
     color: rgba(255, 255, 255, 0.65);
     max-width: 500px;
     line-height: 1.7;
+}
+
+.products-intro1 {
+    color: rgba(255, 255, 255, 0.65);
+    max-width: 700px;
+    line-height: 1.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-self: center;
 }
 
 .filter-tabs {
@@ -1118,14 +1198,11 @@ section {
 }
 
 .products-carousel-track {
-    display: flex;
-    gap: 15px;
     transition: transform 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .products-carousel-item {
     flex-shrink: 0;
-    width: calc(25% - 51.125px);
     height: 400px;
     overflow: hidden;
     cursor: pointer;
@@ -1238,23 +1315,7 @@ section {
     right: 1rem;
 }
 
-@media (max-width: 1200px) {
-    .products-carousel-item {
-        width: calc(33.333% - 51px);
-    }
-}
-
-@media (max-width: 900px) {
-    .products-carousel-item {
-        width: calc(50% - 0.75px);
-    }
-}
-
 @media (max-width: 600px) {
-    .products-carousel-item {
-        width: calc(100% - 0px);
-    }
-    
     .products-carousel-btn {
         width: 35px;
         height: 35px;
@@ -1402,6 +1463,80 @@ section {
     grid-column: span 2;
     grid-row: span 2;
 }
+
+ /* --- cartaz-section --- */
+.cartaz-content {
+    display: flex;
+    gap: 90px;
+}
+
+.cartaz-content img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+/*-- =-=-=-=-= CANETAS SECTION =-=-=-=-=-= */
+
+.canetas-content {
+    display: flex;
+    gap: 60px;
+    flex-direction: row-reverse;
+}
+
+ /* -- section-label 2 -- */
+.section-label2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--yellow);
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content:right;
+    gap: 0.6rem;
+}
+
+.section-label2::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 2px;
+    background: var(--yellow);
+}
+
+.section-title2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    letter-spacing: 0.02em;
+    line-height: 0.95;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: right;
+}
+
+.products-intro2 {
+    color: rgba(255, 255, 255, 0.65);
+    max-width: 700px;
+    line-height: 1.7;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    text-align: right;
+    justify-self:right;
+}
+
+.box-canetas-1 {
+    text-align: right;
+}
+
+.box-canetas-2 img{
+    width: 1100px;
+}
+
 
 /* ── CATEGORIAS ── */
 #categorias {
