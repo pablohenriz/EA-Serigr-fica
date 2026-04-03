@@ -39,10 +39,10 @@
                 <!-- menu-header -->
                 <div class="header-menu">
                     <ul class="group-menu">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Produtos</a></li>
-                        <li><a href="#">Cartazes e Splash</a></li>
-                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="/index1.htm">Home</a></li>
+                        <li><a href="/produtos.html">Produtos</a></li>
+                        <li><a href="/cartaz.html">Cartazes e Splash</a></li>
+                        <li><a href="/index1.html #">Sobre Nós</a></li>
                         <li><a href="#">Catálogo</a></li>
                     </ul>
                 </div>
@@ -207,95 +207,47 @@
         </div>
 
         <!-- CARROSSEL DE PRODUTOS -->
-        <div class="products-carousel-wrap espacamento">
-            <div class="swiper products-carousel-container">
-                <div class="swiper-wrapper products-carousel-track" id="productsCarouselTrack">
-                    <div class="swiper-slide products-carousel-item reveal">
-                        <div class="product-overlay">
-                            <img src="/img/1773622314582_image.png" alt="Tintas Gênesis Serigrafia">
-                        </div>
-                        <div class="products-carousel-overlay">
-                            <p class="carousel-product-name">Tintas Gênesis</p>
-                            <p class="carousel-product-desc">Tintas seribrill, vinílica fosca e metálica.</p>
-                            <p class="product-price">R$ 89,90</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide products-carousel-item reveal">
-                        <div class="product-overlay">
-                            <img src="/img/Captura de tela 2026-03-17 140056.png" alt="Solventes e Tintas Sicoltex">
-                        </div>
-                        <div class="products-carousel-overlay">
-                            <p class="carousel-product-name">Sicoltex & Solventes</p>
-                            <p class="carousel-product-desc">Tintas vinílica fosca e solventes desmoldantes.</p>
-                            <p class="product-price">R$ 125,90</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide products-carousel-item reveal">
-                        <div class="product-overlay">
-                            <img src="/img/Captura de tela 2026-03-17 140128.png" alt="Colordex Plastisol">
-                        </div>
-                        <div class="products-carousel-overlay">
-                            <p class="carousel-product-name">Colordex</p>
-                            <p class="carousel-product-desc">Plastisol, relevo e tinta permanente.</p>
-                            <p class="product-price">R$ 156,90</p>
-                        </div>
-                    </div>
+        <div class="carousel-wrapper">
+            <button class="nav-btn prev" onclick="scrollCarousel(-1)">&#10094;</button>
 
-                    <div class="swiper-slide products-carousel-item reveal">
-                        <div class="product-overlay">
-                            <img src="/img/Captura de tela 2026-03-17 140259.png" alt="Marcadores Metiq e Pilot">
-                        </div>
-                        <div class="products-carousel-overlay">
-                            <p class="carousel-product-name">Marcadores Profissionais</p>
-                            <p class="carousel-product-desc">Metiq, Pilot e Caneta Poster.</p>
-                            <p class="product-price">R$ 45,90</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide products-carousel-item reveal">
-                        <div class="product-overlay">
-                            <img src="/img/Captura de tela 2026-03-17 140252.png" alt="Ferramentas Grampeadores">
-                        </div>
-                        <div class="products-carousel-overlay">
-                            <p class="carousel-product-name">Ferramentas e Suprimentos</p>
-                            <p class="carousel-product-desc">Grampeadores, fitas, estilete.</p>
-                            <p class="product-price">R$ 78,90</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide products-carousel-item reveal">
-                        <div class="product-overlay">
-                            <img src="/img/Captura de tela 2026-03-17 140241.png" alt="Cartazes de Oferta">
-                        </div>
-                        <div class="products-carousel-overlay">
-                            <p class="carousel-product-name">Cartazes de Oferta</p>
-                            <p class="carousel-product-desc">Cartazes prontos para PDV.</p>
-                            <p class="product-price">R$ 65,90</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide products-carousel-item reveal">
-                        <div class="product-overlay">
-                            <img src="/img/Captura de tela 2026-03-17 140159.png" alt="Cartazes Zig Zag">
-                        </div>
-                        <div class="products-carousel-overlay">
-                            <p class="carousel-product-name">Cartazes Zig-Zag</p>
-                            <p class="carousel-product-desc">Modelos explosão e zig-zag amarelos.</p>
-                            <p class="product-price">R$ 55,90</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide products-carousel-item reveal">
-                        <div class="product-overlay">
-                            <img src="/img/Captura de tela 2026-03-17 140136.png" alt="Plastin Tintas">
-                        </div>
-                        <div class="products-carousel-overlay">
-                            <p class="carousel-product-name">Tintas Plastin</p>
-                            <p class="carousel-product-desc">Vernizes e solventes profissionais.</p>
-                            <p class="product-price">R$ 92,90</p>
-                        </div>
-                    </div>
+            <div class="carousel-container" id="carousel">
+                <div class="product-card">
+                    <img src="/img/Captura de tela 2026-03-17 140024.png" alt="Produto"
+                        class="product-image">
+                    <a href="#" class="product-title">Marcador Permanente Azul Pilot 400</a>
+                    <div class="divider"></div>
                 </div>
-                <div class="swiper-button-next products-carousel-btn next"></div>
-                <div class="swiper-button-prev products-carousel-btn prev"></div>
+
+                <div class="product-card">
+                    <img src="/img/Captura de tela 2026-03-17 140056.png" alt="Produto"
+                        class="product-image">
+                    <a href="#" class="product-title">Marcador Permanente Preto Pilot 400</a>
+                    <div class="divider"></div>
+                </div>
+
+                <div class="product-card">
+                    <img src="/img/Captura de tela 2026-03-17 140136.png" alt="Produto"
+                        class="product-image">
+                    <a href="#" class="product-title">Caneta Poster Pen Metiq 10/30mm</a>
+                    <div class="divider"></div>
+                </div>
+
+                <div class="product-card">
+                    <img src="/img//Captura de tela 2026-03-17 140116.png" alt="Produto"
+                        class="product-image">
+                    <a href="#" class="product-title">Caneta Poster Pen Metiq 2/5mm 9ml</a>
+                    <div class="divider"></div>
+                </div>
+
+                <div class="product-card">
+                    <img src="/img/Captura de tela 2026-03-17 140159.png" alt="Produto" class="product-image">
+                    <a href="#" class="product-title">Outro Produto Exemplo para Scroll</a>
+                    <div class="divider"></div>
+                </div>
             </div>
+
+            <button class="nav-btn next" onclick="scrollCarousel(1)">&#10095;</button>
+        </div>
     </section>
 
     <!-- <section class="products-grid espacamento">
