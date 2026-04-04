@@ -39,11 +39,10 @@
                 <!-- menu-header -->
                 <div class="header-menu">
                     <ul class="group-menu">
-                        <li><a href="/index1.htm">Home</a></li>
+                        <li><a href="/index.html">Home</a></li>
                         <li><a href="/produtos.html">Produtos</a></li>
                         <li><a href="/cartaz.html">Cartazes e Splash</a></li>
-                        <li><a href="/index1.html #">Sobre Nós</a></li>
-                        <li><a href="#">Catálogo</a></li>
+                        <li><a href="/index.html#sobre">Sobre Nós</a></li>
                     </ul>
                 </div>
 
@@ -55,67 +54,69 @@
     </header>
 
 
-    <div class="swiper carousel-wrap">
-        <div class="swiper-wrapper carousel-track" id="track">
+    <div class="carrousel-section">
+        <div class="swiper carousel-wrap">
+            <div class="swiper-wrapper carousel-track" id="track">
 
-            <!-- SLIDE 1 -->
-            <div class="swiper-slide carousel-slide active">
-                <img src="/img/1773622314582_image.png" alt="Tintas">
-                <div class="slide-overlay"></div>
+                <!-- SLIDE 1 -->
+                <div class="swiper-slide carousel-slide active">
+                    <img src="/img/1773622314582_image.png" alt="Tintas">
+                    <div class="slide-overlay"></div>
+                </div>
+
+                <!-- SLIDE 2 -->
+                <div class="swiper-slide carousel-slide">
+                    <img src="/img/Captura de tela 2026-03-17 140056.png" alt="Solventes">
+                    <div class="slide-overlay"></div>
+                </div>
+
+                <!-- SLIDE 3 -->
+                <div class="swiper-slide carousel-slide">
+                    <img src="/img/Captura de tela 2026-03-17 140128.png" alt="Plastisol">
+                    <div class="slide-overlay"></div>
+                </div>
+
+                <!-- SLIDE 4 -->
+                <div class="swiper-slide carousel-slide">
+                    <img src="/img/Captura de tela 2026-03-17 140259.png" alt="Marcadores">
+                    <div class="slide-overlay"></div>
+                </div>
+
+                <!-- SLIDE 5 -->
+                <div class="swiper-slide carousel-slide">
+                    <img src="/img/Captura de tela 2026-03-17 140252.png" alt="Ferramentas">
+                    <div class="slide-overlay"></div>
+                </div>
+
+                <!-- SLIDE 6 -->
+                <div class="swiper-slide carousel-slide">
+                    <img src="/img/Captura de tela 2026-03-17 140241.png" alt="Cartazes">
+                    <div class="slide-overlay"></div>
+                </div>
+
             </div>
-
-            <!-- SLIDE 2 -->
-            <div class="swiper-slide carousel-slide">
-                <img src="/img/Captura de tela 2026-03-17 140056.png" alt="Solventes">
-                <div class="slide-overlay"></div>
-            </div>
-
-            <!-- SLIDE 3 -->
-            <div class="swiper-slide carousel-slide">
-                <img src="/img/Captura de tela 2026-03-17 140128.png" alt="Plastisol">
-                <div class="slide-overlay"></div>
-            </div>
-
-            <!-- SLIDE 4 -->
-            <div class="swiper-slide carousel-slide">
-                <img src="/img/Captura de tela 2026-03-17 140259.png" alt="Marcadores">
-                <div class="slide-overlay"></div>
-            </div>
-
-            <!-- SLIDE 5 -->
-            <div class="swiper-slide carousel-slide">
-                <img src="/img/Captura de tela 2026-03-17 140252.png" alt="Ferramentas">
-                <div class="slide-overlay"></div>
-            </div>
-
-            <!-- SLIDE 6 -->
-            <div class="swiper-slide carousel-slide">
-                <img src="/img/Captura de tela 2026-03-17 140241.png" alt="Cartazes">
-                <div class="slide-overlay"></div>
-            </div>
-
+            <div class="swiper-button-next carousel-btn next"></div>
+            <div class="swiper-button-prev carousel-btn prev"></div>
+            <div class="swiper-pagination carousel-dots"></div>
         </div>
-        <div class="swiper-button-next carousel-btn next"></div>
-        <div class="swiper-button-prev carousel-btn prev"></div>
-        <div class="swiper-pagination carousel-dots"></div>
-    </div>
 
-    <!-- TÍTULO SOBREPOSTO AO CARROSSEL -->
-    <div class="hero-left reveal">
-        <p class="hero-eyebrow">São Paulo · Desde 1990</p>
-        <h1 class="hero-title">
-            Tudo para<br>
-            <span class="yellow">Serigrafia</span><br>
-            &amp; <span class="red">Comunicação</span><br>
-            Visual
-        </h1>
-        <p class="hero-sub">
-            Tintas, materiais e insumos para serigrafistas, cartazistas e comunicação visual.
-            Atendemos profissionais e empresas com os melhores produtos do mercado.
-        </p>
-        <div class="hero-ctas">
-            <a href="#contato" class="btn-primary">Fale Conosco</a>
-            <a href="/produtos.html" class="btn-outline">Ver Catálogo</a>
+        <!-- TÍTULO SOBREPOSTO AO CARROSSEL -->
+        <div class="hero-left reveal">
+            <p class="hero-eyebrow">São Paulo · Desde 1990</p>
+            <h1 class="hero-title">
+                Tudo para<br>
+                <span class="yellow">Serigrafia</span><br>
+                &amp; <span class="red">Comunicação</span><br>
+                Visual
+            </h1>
+            <p class="hero-sub">
+                Tintas, materiais e insumos para serigrafistas, cartazistas e comunicação visual.
+                Atendemos profissionais e empresas com os melhores produtos do mercado.
+            </p>
+            <div class="hero-ctas">
+                <a href="#contato" class="btn-primary">Fale Conosco</a>
+                <a href="/produtos.html" class="btn-outline">Ver Produtos</a>
+            </div>
         </div>
     </div>
 
@@ -148,7 +149,7 @@
                 <h2 class="section-title1">Slash que Transforma</h2>
                 <p class="products-intro1">Descubra a magia da comunicação visual com nossos cartazes que inspiram e
                     impactam.</p>
-                <a href="#produtosI" class="btn-primary"
+                <a href="#produtosI" id="btn-primary-1" class="btn-primary"
                     style="display: block; margin: 1rem auto; width: fit-content;">Ver Mais Produtos</a>
             </div>
             <div class="group-img-slash">
@@ -162,14 +163,14 @@
     </section>
 
     <!-- =-=-=-=-= CARTAZ SECTION =-=-=-=-=-= -->
-    <section class="cartaz">
+    <section id="cartaz">
         <div class="cartaz-content reveal espacamento">
             <div class="box-cartaz-1">
                 <p class="section-label">Nossos Cartazes</p>
                 <h2 class="section-title">Cartaz que Transforma</h2>
                 <p class="products-intro">Descubra a magia da comunicação visual com nossos cartazes que inspiram e
                     impactam.</p>
-                <a href="#produtosI" class="btn-primary">Ver Mais Produtos</a>
+                <a href="#produtosI" id="btn-primary-1" class="btn-primary">Ver Mais Produtos</a>
             </div>
             <div class="box-cartaz-2">
                 <img src="/img/Placas de oferta vibrantes no ar-Photoroom.png" alt="">
@@ -185,7 +186,7 @@
                 <h2 class="section-title2">Caneta que Transforma</h2>
                 <p class="products-intro2">Descubra a magia da comunicação visual com nossas canetas que inspiram e
                     impactam.</p>
-                <a href="#produtosI" class="btn-primary">Ver Mais Produtos</a>
+                <a href="#produtosI" id="btn-primary-1" class="btn-primary">Ver Mais Produtos</a>
             </div>
             <div class="box-canetas-2">
                 <img src="/img/Gemini_Generated_Image_46qasy46qasy46qa-Photoroom.png" alt="">
@@ -212,29 +213,25 @@
 
             <div class="carousel-container" id="carousel">
                 <div class="product-card">
-                    <img src="/img/Captura de tela 2026-03-17 140024.png" alt="Produto"
-                        class="product-image">
+                    <img src="/img/Captura de tela 2026-03-17 140024.png" alt="Produto" class="product-image">
                     <a href="#" class="product-title">Marcador Permanente Azul Pilot 400</a>
                     <div class="divider"></div>
                 </div>
 
                 <div class="product-card">
-                    <img src="/img/Captura de tela 2026-03-17 140056.png" alt="Produto"
-                        class="product-image">
+                    <img src="/img/Captura de tela 2026-03-17 140056.png" alt="Produto" class="product-image">
                     <a href="#" class="product-title">Marcador Permanente Preto Pilot 400</a>
                     <div class="divider"></div>
                 </div>
 
                 <div class="product-card">
-                    <img src="/img/Captura de tela 2026-03-17 140136.png" alt="Produto"
-                        class="product-image">
+                    <img src="/img/Captura de tela 2026-03-17 140136.png" alt="Produto" class="product-image">
                     <a href="#" class="product-title">Caneta Poster Pen Metiq 10/30mm</a>
                     <div class="divider"></div>
                 </div>
 
                 <div class="product-card">
-                    <img src="/img//Captura de tela 2026-03-17 140116.png" alt="Produto"
-                        class="product-image">
+                    <img src="/img//Captura de tela 2026-03-17 140116.png" alt="Produto" class="product-image">
                     <a href="#" class="product-title">Caneta Poster Pen Metiq 2/5mm 9ml</a>
                     <div class="divider"></div>
                 </div>
@@ -249,122 +246,6 @@
             <button class="nav-btn next" onclick="scrollCarousel(1)">&#10095;</button>
         </div>
     </section>
-
-    <!-- <section class="products-grid espacamento">
-        <div class="product-card">
-            <div class="product-badge">8% OFF</div>
-            <div class="product-overlay">
-                <img src="/img/1773622314582_image.png" alt="Tintas Gênesis Serigrafia">
-            </div>
-            <div class="product-overlay-2">
-                <p class="product-name">Tintas Gênesis</p>
-                <p class="product-desc">Tintas seribrill, vinílica fosca e metálica para serigrafia
-                    profissional.
-                </p>
-                <p class="product-price">R$ 89,90</p>
-                <p class="product-installment">até 3x de R$ 30,00 sem juros</p>
-
-                <button class="btn-shop">Ver Detalhes</button>
-            </div>
-        </div>
-        <div class="product-card reveal">
-            <div class="product-badge">5% OFF</div>
-            <div class="product-overlay">
-                <img src="/img/Captura de tela 2026-03-17 140056.png" alt="Solventes e Tintas Sicoltex">
-            </div>
-            <div class="product-overlay-2">
-                <p class="product-name">Sicoltex & Solventes SOL</p>
-                <p class="product-desc">Tintas vinílica fosca e solventes desmoldantes.</p>
-                <p class="product-price">R$ 125,90</p>
-                <p class="product-installment">até 4x de R$ 31,50 sem juros</p>
-
-                <button class="btn-shop">Ver Detalhes</button>
-            </div>
-        </div>
-        <div class="product-card reveal">
-            <div class="product-badge">10% OFF</div>
-            <div class="product-overlay">
-                <img src="/img/Captura de tela 2026-03-17 140128.png" alt="Colordex Plastisol">
-            </div>
-            <div class="product-overlay-2">
-                <p class="product-name">Colordex</p>
-                <p class="product-desc">Plastisol, relevo e tinta permanente para serigrafia.</p>
-                <p class="product-price">R$ 156,90</p>
-                <p class="product-installment">até 4x de R$ 39,23 sem juros</p>
-
-                <button class="btn-shop">Ver Detalhes</button>
-            </div>
-        </div>
-        <div class="product-card reveal">
-            <div class="product-badge">12% OFF</div>
-            <div class="product-overlay">
-                <img src="/img/Captura de tela 2026-03-17 140259.png" alt="Marcadores Metiq e Pilot">
-            </div>
-            <div class="product-overlay-2">
-                <p class="product-name">Marcadores Profissionais</p>
-                <p class="product-desc">Metiq, Pilot e Caneta Poster para cartazismo.</p>
-                <p class="product-price">R$ 45,90</p>
-                <p class="product-installment">até 2x de R$ 23,00 sem juros</p>
-                <button class="btn-shop">Ver Detalhes</button>
-            </div>
-        </div>
-        <div class="product-card reveal">
-            <div class="product-badge">7% OFF</div>
-            <div class="product-overlay">
-                <img src="/img/Captura de tela 2026-03-17 140252.png" alt="Ferramentas Grampeadores">
-            </div>
-            <div class="product-overlay-2">
-                <p class="product-name">Ferramentas e Suprimentos</p>
-                <p class="product-desc">Grampeadores, fitas, estilete e materiais auxiliares.</p>
-                <p class="product-price">R$ 78,90</p>
-                <p class="product-installment">até 3x de R$ 26,30 sem juros</p>
-
-                <button class="btn-shop">Ver Detalhes</button>
-            </div>
-        </div>
-        <div class="product-card reveal">
-            <div class="product-badge">9% OFF</div>
-            <div class="product-overlay">
-                <img src="/img/Captura de tela 2026-03-17 140241.png" alt="Cartazes de Oferta">
-            </div>
-            <div class="product-overlay-2">
-                <p class="product-name">Cartazes de Oferta</p>
-                <p class="product-desc">Cartazes prontos para PDV em diversos formatos e tamanhos.</p>
-                <p class="product-price">R$ 65,90</p>
-                <p class="product-installment">até 3x de R$ 22,00 sem juros</p>
-
-                <button class="btn-shop">Ver Detalhes</button>
-            </div>
-        </div>
-        <div class="product-card reveal">
-            <div class="product-badge">6% OFF</div>
-            <div class="product-overlay">
-                <img src="/img/Captura de tela 2026-03-17 140159.png" alt="Cartazes Zig Zag">
-            </div>
-            <div class="product-overlay-2">
-                <p class="product-name">Cartazes Zig-Zag</p>
-                <p class="product-desc">Modelos explosão e zig-zag amarelos para promoções.</p>
-                <p class="product-price">R$ 55,90</p>
-                <p class="product-installment">até 2x de R$ 28,00 sem juros</p>
-
-                <button class="btn-shop">Ver Detalhes</button>
-            </div>
-        </div>
-        <div class="product-card reveal">
-            <div class="product-badge">8% OFF</div>
-            <div class="product-overlay">
-                <img src="/img/Captura de tela 2026-03-17 140136.png" alt="Plastin Tintas">
-            </div>
-            <div class="product-overlay-2">
-                <p class="product-name">Tintas Plastin</p>
-                <p class="product-desc">Vernizes e solventes para comunicação visual profissional.</p>
-                <p class="product-price">R$ 92,90</p>
-                <p class="product-installment">até 3x de R$ 31,00 sem juros</p>
-
-                <button class="btn-shop">Ver Detalhes</button>
-            </div>
-        </div>
-    </section> -->
 
     <!-- GALERIA / VISUALIZAÇÃO
     <section id="galeria" class="product-showcase">
