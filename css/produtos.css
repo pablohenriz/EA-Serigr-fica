@@ -4,24 +4,68 @@
   min-height: 100vh;
 }
 
-/* HERO PRODUTOS - mesmo estilo da index1 */
 .products-hero {
-  min-height: 40vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   position: relative;
+  height: 70vh;
+  max-height: 500px;
+  min-height: 400px;
   overflow: hidden;
-  padding-top: 64px;
+  background: #111111;
   border-bottom: 2px solid var(--yellow);
+  
+  /* ADICIONE ISSO: */
+  display: flex;
+  align-items: center;   /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+}
+
+/* Diagonal amarela à esquerda */
+.products-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #FFD600;
+  z-index: 0;
 }
 
 .products-hero .hero-left {
+  position: relative; /* Garante que fique acima do ::before */
+  z-index: 1;
+  
+  width: auto;        /* Deixa o container abraçar o texto */
+  max-width: 800px;   /* Evita que o texto fique largo demais em telas grandes */
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 5rem 3rem 5rem 4rem;
-  position: relative;
-  z-index: 2;
+  align-items: center; /* Centraliza os itens internamente */
+  
+  padding: 2rem;       /* Padding equilibrado */
+  margin: 0;           /* Remove margens que desalinhariam o centro */
+  text-align: center;
+}
+
+
+/* Textos do lado esquerdo ficam pretos em cima do amarelo */
+.products-hero .hero-left .hero-eyebrow {
+  color: #111111;
+}
+
+.products-hero .hero-left .hero-eyebrow::before {
+  background: #111111;
+}
+
+.products-hero .hero-left .hero-title {
+  color: #111111;
+}
+
+.products-hero .hero-left .hero-title .yellow {
+  color: var(--yellow);
+  -webkit-text-stroke: 1.5px #111111;
+}
+
+.products-hero .hero-left .hero-sub {
+  color: rgba(17, 17, 17, 0.7);
 }
 
 .products-hero .hero-eyebrow {
@@ -35,6 +79,7 @@
   display: flex;
   align-items: center;
   gap: 0.6rem;
+  margin-top: 150px;
 }
 
 .products-hero .hero-eyebrow::before {
@@ -47,7 +92,7 @@
 
 .products-hero .hero-title {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(3.5rem, 7vw, 6.5rem);
+  font-size: clamp(5rem, 7vw, 6.5rem);
   line-height: 0.9;
   letter-spacing: 0.02em;
   margin-bottom: 1.5rem;
@@ -220,14 +265,31 @@
   pointer-events: none;
 }
 
-/* PRODUCTS GRID - mesmo estilo da index1 */
+/* PRODUCTS GRID */
 .products-grid {
-  display: flex;
-  flex-direction: column;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  display: grid; /* Mudamos de flex para grid */
+  
+  /* Definimos 4 colunas com tamanhos iguais (1fr cada) */
+  grid-template-columns: repeat(4, 1fr); 
+  
   gap: 1.5px;
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
+/* Ajuste opcional para Responsividade (Celular) */
+@media (max-width: 1024px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas em tablets */
+  }
+}
+
+@media (max-width: 600px) {
+  .products-grid {
+    grid-template-columns: 1fr; /* 1 coluna em celulares */
+  }
+}
 /* PRODUCT CARD */
 .product-card {
   position: relative;
@@ -679,34 +741,22 @@ body {
 .demo-header {
   padding: 2.5rem 3rem 1rem;
   border-bottom: 1px solid rgba(255, 255, 255, .06);
+  margin-bottom: 30px;
 }
 
 .demo-header h1 {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 2rem;
+  font-size: 3rem;
   letter-spacing: .05em;
   color: var(--yellow);
 }
 
 .demo-header p {
-  font-size: .85rem;
+  font-size: 1.20rem;
   color: var(--gray);
   margin-top: .25rem;
 }
 
-.products-grid {
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 1.5px;
-  padding: 2rem 3rem 4rem;
-}
-
-/* Quando a tela tiver pelo menos 768px, muda para 3 colunas */
-@media (min-width: 768px) {
-  .products-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
 
 /* ─── PRODUCT CARD ───────────────────────────────────── */
 .product-card {
